@@ -1,0 +1,285 @@
+body {
+  background-color: #252525;
+  color: white;
+}
+
+main {
+  margin: 0 55px 0 55px;
+}
+
+h1 {
+  visibility: hidden;
+}
+
+h2 {
+  font-family: "Inconsolata", monospace;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1em;
+  font-size: 24px;
+  margin: 0 0 0 0;
+}
+
+h3 {
+  font-family: "Istok Web", sans-serif;
+  font-weight: 400;
+  font-size: 130px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+
+h4 {
+  font-family: "Istok Web", sans-serif;
+  font-weight: 600;
+  font-size: 70px;
+  color: #1f2f74;
+  margin: 100px 0 0 80px;
+}
+
+h5 {
+  font-family: "Inconsolata", monospace;
+  font-weight: 600;
+  letter-spacing: 0.4em;
+  font-size: 45px;
+  color: #91a6ff;
+  margin: 20px 0 0 80px;
+}
+
+h5 a {
+  color: #91a6ff;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin-top: 52px;
+  margin-bottom: 100px;
+  font-family: "Istok Web", sans-serif;
+  font-size: 18px;
+}
+
+header {
+  display: flex;
+  flex-wrap: nowrap;
+  margin: 80px 55px;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 100vw;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+#logo {
+  width: 110px;
+  height: 116px;
+}
+
+#headline-color-2 {
+  color: #91a6ff;
+}
+
+#resume {
+  border-radius: 60px;
+  border-color: #91a6ff;
+  border-width: 10px;
+  border-style: solid;
+  background-color: #252525;
+  color: white;
+  font-family: "Inconsolata", monospace;
+  font-weight: 400;
+  width: fit-content;
+  font-size: 50px;
+  padding: 35px;
+  margin-top: 20px;
+}
+
+.ellie {
+  width: 850px;
+  height: 1130px;
+  margin-top: 150px;
+  margin-bottom: -6px;
+}
+
+.skills {
+  background-color: #91a6ff;
+  margin: auto -66px;
+  padding: 200px 66px;
+}
+
+.skills h3 {
+  color: #1f2f74;
+}
+
+.works {
+  padding: 200px 0;
+}
+
+#project-showcase {
+  background-color: #2a2b30;
+  margin: auto -66px;
+  padding: 130px 66px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  gap: 150px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  background-color: #91a6ff;
+  color: white;
+  margin: auto -10px;
+  padding: 200px 280px;
+}
+
+#footer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+#footer img {
+  width: 120px;
+  height: max-content;
+}
+#p {
+  margin: 130px 0 0 0;
+}
+footer p {
+  font-family: "Inconsolata", monospace;
+  font-weight: 600;
+  letter-spacing: 0.3em;
+  text-align: center;
+  font-size: 34px;
+  margin: 0;
+}
+#git {
+  padding: 0 80px;
+}
+
+#project {
+  background-color: #e9edff;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  height: 1100px;
+  width: 800px;
+  border-radius: 60px;
+}
+
+#img-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 650px;
+}
+
+#description-box {
+  background-color: white;
+  height: 450px;
+  width: inherit;
+  align-self: end;
+  border-radius: 0 0 60px 60px;
+  align-items: center;
+}
+
+#img-project {
+  width: 370px;
+  height: 416px;
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  height: 135px;
+  background-color: #252525;
+  color: #91a6ff;
+  caret-color: #91a6ff;
+  outline: none;
+  border: none;
+  border-bottom: 3px solid white;
+  box-sizing: border-box;
+  margin: 30px 0 100px 0;
+  /* resize: vertical; */
+  font-family: "Istok Web", sans-serif;
+  font-weight: 400;
+  font-size: 50px;
+  margin-top: 40px;
+  margin-bottom: 120px;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+  border: none;
+  border-bottom: 3px solid #91a6ff;
+}
+input[type="text"]:focus::placeholder,
+textarea:focus::placeholder {
+  visibility: hidden;
+}
+
+::placeholder {
+  color: #91a6ff;
+  opacity: 45%;
+}
+
+#subject {
+  height: fit-content;
+  font-size: 50px;
+}
+
+#subject:focus {
+  height: fit-content;
+  font-size: 30px;
+}
+
+input[type="submit"] {
+  border-radius: 100px;
+  border-color: #91a6ff;
+  border-width: 10px;
+  border-style: solid;
+  background-color: #252525;
+  color: white;
+  font-family: "Inconsolata", monospace;
+  font-weight: 400;
+  width: fit-content;
+  font-size: 50px;
+  padding: 35px;
+  margin-top: 20px;
+  cursor: pointer;
+  align-self: center;
+  margin-left: 25vw;
+}
+
+.container label {
+  font-family: "Inconsolata", monospace;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.4em;
+  font-size: 50px;
+  color: white;
+  margin: 0 0 30px 0;
+}
+
+.container {
+  margin-bottom: 250px;
+  display: flex;
+}
