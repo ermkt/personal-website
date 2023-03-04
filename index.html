@@ -7,6 +7,7 @@
       name="keywords"
       content="frontend, frontend developer, personal website, portfoilio"
     />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="style.css" />
     <title>Eliza Romeikat</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -26,7 +27,7 @@
     <header>
       <img
         id="logo"
-        src="./illustration/Eliza_Romeikat_logo____.png"
+        src="./assets/Eliza_Romeikat_logo____.png"
         alt="White lower case e with a light purpe dot in the lower right hand corner"
       />
       <nav>
@@ -40,53 +41,58 @@
     </header>
     <h1>Eliza Romeikat</h1>
     <main>
-      <section>
-        <h2>About me</h2>
-        <h3>Hey, I'm <span id="headline-color-2">Ellie!</span></h3>
-        <p>
-          Hey, you know how I'm, like, always trying to save the planet? Here's
-          my chance. This thing comes fully loaded. AM/FM radio, reclining
-          bucket seats, and... power windows. You know what? It is beets. I've
-          crashed into a beet truck. Remind me to thank John for a lovely
-          weekend.
-        </p>
+      <section class="about-me margin-mobile">
+        <div>
+          <h2>About me</h2>
+          <h3>Hey, I'm <span id="headline-color-2">Ellie!</span></h3>
+          <p>
+            Hey, you know how I'm, like, always trying to save the planet?
+            Here's my chance. This thing comes fully loaded. AM/FM radio,
+            reclining bucket seats, and... power windows. You know what? It is
+            beets. I've crashed into a beet truck. Remind me to thank John for a
+            lovely weekend.
+          </p>
 
-        <button id="resume">View Resumé 🔗</button>
+          <button id="resume">View Resumé 🔗</button>
+        </div>
 
         <img
           class="ellie"
-          src="./illustration/56567008-02.png"
+          src="./assets/56567008-02.png"
           alt="blonde girl presumably Ellie herself making a piece sign and taking a selfie"
         />
       </section>
 
       <section class="skills">
-        <h2>Checkout my</h2>
-        <h3>Skills</h3>
-        <p>
-          Hey, you know how I'm, like, always trying to save the planet? Here's
-          my chance. This thing comes fully loaded. AM/FM radio, reclining
-          bucket seats, and... power windows. You know what? It is beets. I've
-          crashed into a beet truck. Remind me to thank John for a lovely
-          weekend.
-        </p>
-        <p>
-          Life finds a way. You know what? It is beets. I've crashed into a beet
-          truck. Must go faster. God help us, we're in the hands of engineers.
-          Remind me to thank John for a lovely weekend. Jaguar shark! So tell me
-          - does it really exist? Must go faster... go, go, go, go, go!
-        </p>
+        <div id="box">
+          <h2>Checkout my</h2>
+          <h3>Skills</h3>
+          <p>
+            Hey, you know how I'm, like, always trying to save the planet?
+            Here's my chance. This thing comes fully loaded. AM/FM radio,
+            reclining bucket seats, and... power windows. You know what? It is
+            beets. I've crashed into a beet truck. Remind me to thank John for a
+            lovely weekend.
+          </p>
+          <p>
+            Life finds a way. You know what? It is beets. I've crashed into a
+            beet truck. Must go faster. God help us, we're in the hands of
+            engineers. Remind me to thank John for a lovely weekend. Jaguar
+            shark! So tell me - does it really exist? Must go faster... go, go,
+            go, go, go!
+          </p>
+        </div>
 
-        <!-- <div>
-            <img src="" alt="" />
-            <img src="" alt="" />
-            <img src="" alt="" />
-            <img src="" alt="" />
-            <p></p>
-          </div> -->
+        <div>
+          <img src="" alt="" />
+          <img src="" alt="" />
+          <img src="" alt="" />
+          <img src="" alt="" />
+          <p></p>
+        </div>
       </section>
 
-      <section class="works">
+      <section class="works margin-mobile">
         <h2>Take a look at</h2>
         <h3>My <span id="headline-color-2">Works</span></h3>
         <p>
@@ -96,45 +102,45 @@
           crashed into a beet truck. Remind me to thank John for a lovely
           weekend.
         </p>
+      </section>
 
-        <div id="project-showcase">
-          <div id="project">
-            <div id="img-box">
-              <img
-                src="./illustration/Eliza_Romeikat_logo____.png"
-                id="img-project"
-                alt=""
-              />
-            </div>
-            <div id="description-box">
-              <h4>Personal Website</h4>
-              <h5><a href="">ellie.dev</a></h5>
-            </div>
+      <section id="project-showcase">
+        <div id="project">
+          <div id="img-box">
+            <img
+              src="./assets/Eliza_Romeikat_logo____.png"
+              id="img-project"
+              alt=""
+            />
           </div>
-
-          <div id="project">
-            <div id="img-box">
-              <p>PokéDex</p>
-            </div>
-            <div id="description-box">
-              <h4>PokéDex Web</h4>
-              <h5><a href="">pokedex.github</a></h5>
-            </div>
+          <div id="description-box">
+            <h4>Personal Website</h4>
+            <h5><a href="">ellie.dev</a></h5>
           </div>
+        </div>
 
-          <div id="project">
-            <div id="img-box">
-              <img src="./illustration/" alt="" />
-            </div>
-            <div id="description-box">
-              <h4>NEW WORK KART</h4>
-              <!-- <h5></h5> -->
-            </div>
+        <div id="project">
+          <div id="img-box">
+            <p>PokéDex</p>
+          </div>
+          <div id="description-box">
+            <h4>PokéDex Web</h4>
+            <h5><a href="">pokedex.github</a></h5>
+          </div>
+        </div>
+
+        <div id="project">
+          <div id="img-box">
+            <img src="./assets/" alt="" />
+          </div>
+          <div id="description-box">
+            <h4>NEW WORK KART</h4>
+            <h5></h5>
           </div>
         </div>
       </section>
 
-      <section>
+      <section class="contact-form margin-mobile">
         <h2>Say Hello</h2>
         <h3>Let's <span id="headline-color-2">Connect!</span></h3>
         <p></p>
@@ -148,13 +154,6 @@
               placeholder="Your full name"
             />
 
-            <label for="subject">Your message</label>
-            <textarea
-              id="subject"
-              name="subject"
-              placeholder="Hey, I like your work and was wondering ..."
-            ></textarea>
-
             <label for="mail">Email address</label>
             <input
               type="text"
@@ -163,6 +162,13 @@
               placeholder="Enter your email address"
             />
 
+            <label for="subject">Your message</label>
+            <textarea
+              id="subject"
+              name="subject"
+              placeholder="Hey, I like your work and was wondering ..."
+            ></textarea>
+
             <input type="submit" value="Send Mail ✉️" />
           </form>
         </div>
@@ -170,9 +176,9 @@
     </main>
     <footer>
       <section id="footer">
-        <img src="./illustration/2021 Twitter logo - white.png" alt="" />
-        <img id="git" src="./illustration/github-mark-white.png" alt="" />
-        <img src="./illustration/XING_iconmark_RGB_white.png" alt="" />
+        <img src="./assets/2021 Twitter logo - white.png" alt="" />
+        <img id="git" src="./assets/github-mark-white.png" alt="" />
+        <img src="./assets/XING_iconmark_RGB_white.png" alt="" />
       </section>
       <section id="p">
         <p>
