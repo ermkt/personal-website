@@ -1,3 +1,5 @@
+/* || General styles */
+
 body {
   background-color: #252525;
   color: white;
@@ -6,6 +8,8 @@ body {
 main {
   margin: 0 55px 0 55px;
 }
+
+/* || Typography */
 
 h1 {
   visibility: hidden;
@@ -49,16 +53,14 @@ h5 a {
   color: #91a6ff;
 }
 
-a {
-  text-decoration: none;
-}
-
 p {
   margin-top: 52px;
   margin-bottom: 100px;
   font-family: "Istok Web", sans-serif;
   font-size: 18px;
 }
+
+/* || Header and Main Navigation */
 
 header {
   display: flex;
@@ -81,14 +83,31 @@ ul {
   list-style-type: none;
 }
 
-#logo {
-  width: 110px;
-  height: 116px;
+/* || Utilities */
+
+a {
+  text-decoration: none;
 }
 
 #headline-color-2 {
   color: #91a6ff;
 }
+
+/* || Visual Assets */
+
+#logo {
+  width: 110px;
+  height: 116px;
+}
+
+.ellie {
+  width: 850px;
+  height: 1130px;
+  margin-top: 150px;
+  margin-bottom: -6px;
+}
+
+/* || About Me */
 
 #resume {
   border-radius: 60px;
@@ -105,12 +124,7 @@ ul {
   margin-top: 20px;
 }
 
-.ellie {
-  width: 850px;
-  height: 1130px;
-  margin-top: 150px;
-  margin-bottom: -6px;
-}
+/* || Skills */
 
 .skills {
   background-color: #91a6ff;
@@ -121,6 +135,8 @@ ul {
 .skills h3 {
   color: #1f2f74;
 }
+
+/* || Projects */
 
 .works {
   padding: 200px 0;
@@ -136,42 +152,6 @@ ul {
   flex-wrap: nowrap;
   flex-direction: column;
   gap: 150px;
-}
-
-footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-  background-color: #91a6ff;
-  color: white;
-  margin: auto -10px;
-  padding: 200px 280px;
-}
-
-#footer {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-}
-#footer img {
-  width: 120px;
-  height: max-content;
-}
-#p {
-  margin: 130px 0 0 0;
-}
-footer p {
-  font-family: "Inconsolata", monospace;
-  font-weight: 600;
-  letter-spacing: 0.3em;
-  text-align: center;
-  font-size: 34px;
-  margin: 0;
-}
-#git {
-  padding: 0 80px;
 }
 
 #project {
@@ -205,6 +185,8 @@ footer p {
   width: 370px;
   height: 416px;
 }
+
+/* || Contact form */
 
 input[type="text"],
 textarea {
@@ -282,4 +264,42 @@ input[type="submit"] {
 .container {
   margin-bottom: 250px;
   display: flex;
+}
+
+/* || Footer */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  background-color: #91a6ff;
+  color: white;
+  margin: auto -10px;
+  padding: 200px 280px;
+}
+
+#footer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+#footer img {
+  width: 120px;
+  height: max-content;
+}
+#p {
+  margin: 130px 0 0 0;
+}
+footer p {
+  font-family: "Inconsolata", monospace;
+  font-weight: 600;
+  letter-spacing: 0.3em;
+  text-align: center;
+  font-size: 34px;
+  margin: 0;
+}
+#git {
+  padding: 0 80px;
 }
