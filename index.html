@@ -32,8 +32,8 @@
       />
       <nav>
         <ul>
-          <li>About me</li>
-          <li>Skills</li>
+          <li><a href="#about-me"> About me</a></li>
+          <li><a href="#skills"> Skills</a></li>
           <li>Works</li>
           <li>Contact</li>
         </ul>
@@ -41,7 +41,7 @@
     </header>
     <h1>Eliza Romeikat</h1>
     <main>
-      <section class="about-me margin-mobile">
+      <section class="about-me margin-mobile" id="about-me">
         <div>
           <h2>About me</h2>
           <h3>Hey, I'm <span id="headline-color-2">Ellie!</span></h3>
@@ -52,8 +52,21 @@
             beets. I've crashed into a beet truck. Remind me to thank John for a
             lovely weekend.
           </p>
-
-          <button id="resume">View Resumé 🔗</button>
+          <div id="zwei">
+            <button id="resume">View Resumé 🔗</button>
+            <section id="icons">
+              <img src="./assets/2021 Twitter logo - white.png" alt="" />
+              <a target="_blank" rel="noopener" href="https://github.com/ermkt"
+                ><img id="git" src="./assets/github-mark-white.png" alt=""
+              /></a>
+              <a
+                target="_blank"
+                rel="noopener"
+                href="https://www.xing.com/profile/Eliza_Romeikat/cv"
+                ><img src="./assets/XING_iconmark_RGB_white.png" alt=""
+              /></a>
+            </section>
+          </div>
         </div>
 
         <img
@@ -63,7 +76,7 @@
         />
       </section>
 
-      <section class="skills">
+      <section class="skills" id="skills">
         <div id="box">
           <h2>Checkout my</h2>
           <h3>Skills</h3>
