@@ -125,16 +125,15 @@ a {
   text-decoration: none;
 }
 
-a:link {
+li a:link {
   color: white;
 }
 
-a:visited {
+li a:visited {
   color: white;
 }
 
-a:hover {
-  border: none;
+li a:hover {
   border-bottom: 5px solid #91a6ff;
 }
 
@@ -521,6 +520,17 @@ footer {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
+}
+
+@media only screen and (min-width: 768px) {
+  #footer {
+    visibility: hidden;
+    height: 1px;
+  }
+
+  footer {
+    padding: 70px 150px 100px 150px;
+  }
 }
 #footer img {
   width: 45px;
