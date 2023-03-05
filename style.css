@@ -180,6 +180,16 @@ a {
   }
 }
 
+@media only screen and (min-width: 1024px) {
+  .skills {
+    padding-left: 86px;
+  }
+
+  #box {
+    width: 45%;
+  }
+}
+
 .skills h3 {
   color: #1f2f74;
 }
@@ -193,6 +203,13 @@ a {
 @media only screen and (min-width: 768px) {
   .works {
     width: 50%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .works {
+    margin-left: 86px;
+    width: 45%;
   }
 }
 
@@ -253,6 +270,12 @@ a {
   display: flex;
   flex-direction: column;
 }
+@media only screen and (min-width: 1024px) {
+  .contact-form {
+    margin-left: 86px;
+    margin-right: 86px;
+  }
+}
 
 .contact-form h2,
 .contact-form h3 {
@@ -263,6 +286,29 @@ form {
   display: flex;
   flex-direction: column;
   width: 100%;
+}
+
+@media only screen and (min-width: 1024px) {
+  form {
+    flex-wrap: wrap;
+    /* flex-direction: row; */
+  }
+
+  #name,
+  #mail {
+    width: 335px;
+  }
+
+  .contact-input-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-info-wrapper {
+    display: flex;
+    align-self: center;
+    gap: 180px;
+  }
 }
 
 input[type="text"],
