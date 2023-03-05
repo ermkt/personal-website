@@ -3,10 +3,7 @@
 body {
   background-color: #252525;
   color: white;
-}
-
-main {
-  margin: 0 55px 0 55px;
+  margin: 0px;
 }
 
 /* || Typography */
@@ -19,34 +16,40 @@ h2 {
   font-family: "Inconsolata", monospace;
   font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 1em;
+  letter-spacing: 0.37em;
   font-size: 24px;
-  margin: 0 0 0 0;
+  margin: 0;
 }
 
 h3 {
   font-family: "Istok Web", sans-serif;
   font-weight: 400;
-  font-size: 130px;
+  font-size: 52px;
   margin-top: 10px;
   margin-bottom: 0px;
+}
+
+@media only screen and (min-width: 1440px) {
+  h3 {
+    font-size: 64px;
+  }
 }
 
 h4 {
   font-family: "Istok Web", sans-serif;
   font-weight: 600;
-  font-size: 70px;
+  font-size: 24px;
   color: #1f2f74;
-  margin: 100px 0 0 80px;
+  margin: 33px 0 0 33px;
 }
 
 h5 {
   font-family: "Inconsolata", monospace;
   font-weight: 600;
   letter-spacing: 0.4em;
-  font-size: 45px;
+  font-size: 16px;
   color: #91a6ff;
-  margin: 20px 0 0 80px;
+  margin: 5px 0 70px 33px;
 }
 
 h5 a {
@@ -54,10 +57,16 @@ h5 a {
 }
 
 p {
-  margin-top: 52px;
-  margin-bottom: 100px;
+  margin-top: 25px;
+  margin-bottom: 50px;
   font-family: "Istok Web", sans-serif;
   font-size: 18px;
+}
+
+@media only screen and (min-width: 1440px) {
+  p {
+    font-size: 20px;
+  }
 }
 
 /* || Header and Main Navigation */
@@ -65,14 +74,25 @@ p {
 header {
   display: flex;
   flex-wrap: nowrap;
-  margin: 80px 55px;
+  margin: 30px 26px;
+  justify-content: space-between;
+}
+
+@media only screen and (min-width: 1024px) {
+  header {
+    margin: 37px 0 0 60px;
+  }
+
+  nav {
+    margin-right: 135px;
+  }
 }
 
 nav {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  width: 100vw;
+  width: fit-content;
 }
 
 ul {
@@ -81,6 +101,16 @@ ul {
   flex-wrap: nowrap;
   text-decoration: none;
   list-style-type: none;
+  font-family: "Istok Web", sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+@media only screen and (min-width: 768px) {
+  ul {
+    gap: 90px;
+  }
 }
 
 /* || Utilities */
@@ -93,43 +123,117 @@ a {
   color: #91a6ff;
 }
 
+.margin-mobile {
+  margin: 0 26px 0 26px;
+}
+
 /* || Visual Assets */
 
 #logo {
-  width: 110px;
-  height: 116px;
+  width: 33px;
+  height: 39px;
+}
+
+@media only screen and (min-width: 1024px) {
+  #logo {
+    width: 52px;
+    height: 60px;
+  }
 }
 
 .ellie {
-  width: 850px;
-  height: 1130px;
-  margin-top: 150px;
-  margin-bottom: -6px;
+  margin-top: 70px;
+  margin-bottom: -1px;
+}
+
+@media only screen and (min-width: 768px) {
+  .ellie {
+    width: 350px;
+    height: 450px;
+    margin: 0;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .ellie {
+    width: 535px;
+    height: 690px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .ellie {
+    margin-left: 175px;
+  }
 }
 
 /* || About Me */
 
+.about-me {
+  display: flex;
+  flex-direction: column;
+}
+
+@media only screen and (min-width: 768px) {
+  .about-me {
+    flex-direction: row;
+    margin-right: 0;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .about-me {
+    margin-left: 86px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .about-me div {
+    width: 475px;
+  }
+}
+
 #resume {
-  border-radius: 60px;
+  border-radius: 20px;
   border-color: #91a6ff;
-  border-width: 10px;
+  border-width: 5px;
   border-style: solid;
   background-color: #252525;
   color: white;
   font-family: "Inconsolata", monospace;
   font-weight: 400;
-  width: fit-content;
-  font-size: 50px;
-  padding: 35px;
-  margin-top: 20px;
+  width: 190px;
+  height: 60px;
+  font-size: 20px;
 }
 
 /* || Skills */
 
 .skills {
   background-color: #91a6ff;
-  margin: auto -66px;
-  padding: 200px 66px;
+  padding: 40px 26px;
+  display: flex;
+  flex-direction: column;
+}
+
+@media only screen and (min-width: 768px) {
+  .skills {
+    flex-direction: row;
+  }
+
+  #box {
+    width: 55%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .skills {
+    padding-left: 86px;
+  }
+
+  #box {
+    width: 45%;
+  }
 }
 
 .skills h3 {
@@ -139,19 +243,37 @@ a {
 /* || Projects */
 
 .works {
-  padding: 200px 0;
+  margin-top: 70px;
+}
+
+@media only screen and (min-width: 768px) {
+  .works {
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .works {
+    margin-left: 86px;
+    width: 45%;
+  }
 }
 
 #project-showcase {
   background-color: #2a2b30;
-  margin: auto -66px;
-  padding: 130px 66px;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: nowrap;
   flex-direction: column;
-  gap: 150px;
+  padding: 80px 26px;
+  gap: 60px;
+}
+
+@media only screen and (min-width: 768px) {
+  #project-showcase {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 
 #project {
@@ -160,58 +282,103 @@ a {
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: space-between;
-  height: 1100px;
-  width: 800px;
-  border-radius: 60px;
+  height: 400px;
+  width: 270px;
+  border-radius: 20px;
 }
 
 #img-box {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 650px;
+  padding: 50px 0 40px 0;
+  height: 65%;
 }
 
 #description-box {
   background-color: white;
-  height: 450px;
+  height: 45%;
   width: inherit;
   align-self: end;
-  border-radius: 0 0 60px 60px;
+  border-radius: 0 0 20px 20px;
   align-items: center;
 }
 
 #img-project {
-  width: 370px;
-  height: 416px;
+  width: 131px;
+  height: 154px;
 }
 
 /* || Contact form */
 
+.contact-form {
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+}
+@media only screen and (min-width: 1024px) {
+  .contact-form {
+    margin-left: 86px;
+    margin-right: 86px;
+  }
+}
+
+.contact-form h2,
+.contact-form h3 {
+  align-self: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+@media only screen and (min-width: 1024px) {
+  form {
+    flex-wrap: wrap;
+    /* flex-direction: row; */
+  }
+
+  #name,
+  #mail {
+    width: 335px;
+  }
+
+  .contact-input-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-info-wrapper {
+    display: flex;
+    align-self: center;
+    gap: 180px;
+  }
+}
+
 input[type="text"],
 textarea {
   width: 100%;
-  height: 135px;
   background-color: #252525;
   color: #91a6ff;
   caret-color: #91a6ff;
   outline: none;
   border: none;
-  border-bottom: 3px solid white;
+  border-bottom: 1px solid white;
   box-sizing: border-box;
-  margin: 30px 0 100px 0;
+  margin: 20px 0 50px 0;
+  padding-bottom: 15px;
   /* resize: vertical; */
   font-family: "Istok Web", sans-serif;
   font-weight: 400;
-  font-size: 50px;
-  margin-top: 40px;
-  margin-bottom: 120px;
+  font-size: 16px;
 }
 
 input[type="text"]:focus,
 textarea:focus {
   border: none;
-  border-bottom: 3px solid #91a6ff;
+  border-bottom: 1px solid #91a6ff;
 }
 input[type="text"]:focus::placeholder,
 textarea:focus::placeholder {
@@ -225,30 +392,23 @@ textarea:focus::placeholder {
 
 #subject {
   height: fit-content;
-  font-size: 50px;
-}
-
-#subject:focus {
-  height: fit-content;
-  font-size: 30px;
+  font-size: 16px;
 }
 
 input[type="submit"] {
-  border-radius: 100px;
+  border-radius: 30px;
   border-color: #91a6ff;
-  border-width: 10px;
+  border-width: 5px;
   border-style: solid;
   background-color: #252525;
   color: white;
   font-family: "Inconsolata", monospace;
   font-weight: 400;
-  width: fit-content;
-  font-size: 50px;
-  padding: 35px;
-  margin-top: 20px;
+  height: 45px;
+  width: 160px;
+  font-size: 20px;
   cursor: pointer;
   align-self: center;
-  margin-left: 25vw;
 }
 
 .container label {
@@ -256,13 +416,13 @@ input[type="submit"] {
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.4em;
-  font-size: 50px;
+  font-size: 18px;
   color: white;
   margin: 0 0 30px 0;
 }
 
 .container {
-  margin-bottom: 250px;
+  margin-bottom: 100px;
   display: flex;
 }
 
@@ -276,8 +436,7 @@ footer {
   align-items: center;
   background-color: #91a6ff;
   color: white;
-  margin: auto -10px;
-  padding: 200px 280px;
+  padding: 70px 90px 40px 90px;
 }
 
 #footer {
@@ -286,20 +445,20 @@ footer {
   flex-wrap: nowrap;
 }
 #footer img {
-  width: 120px;
+  width: 45px;
   height: max-content;
 }
 #p {
-  margin: 130px 0 0 0;
+  margin: 45px 0 0 0;
 }
 footer p {
   font-family: "Inconsolata", monospace;
   font-weight: 600;
   letter-spacing: 0.3em;
   text-align: center;
-  font-size: 34px;
+  font-size: 12px;
   margin: 0;
 }
 #git {
-  padding: 0 80px;
+  padding: 0 25px;
 }
