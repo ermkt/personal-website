@@ -419,24 +419,6 @@ li a:hover {
   margin-top: 70px;
   display: flex;
   flex-direction: column;
-}
-
-@media only screen and (min-width: 900px) {
-  .contact-form {
-    margin-left: 86px;
-    margin-right: 86px;
-  }
-}
-
-@media only screen and (min-width: 1024px) {
-  .contact-form {
-    margin-left: 86px;
-    margin-right: 86px;
-  }
-}
-
-.contact-form h2,
-.contact-form h3 {
   align-self: center;
 }
 
@@ -446,12 +428,12 @@ form {
   width: 100%;
 }
 
-@media only screen and (min-width: 900px) {
-  form {
-    flex-wrap: wrap;
-    /* flex-direction: row; */
-  }
+.contact-form h2,
+.contact-form h3 {
+  align-self: center;
+}
 
+@media only screen and (min-width: 768px) {
   #name,
   #mail {
     width: 335px;
@@ -470,26 +452,17 @@ form {
   }
 }
 
-@media only screen and (min-width: 1024px) {
-  form {
-    flex-wrap: wrap;
-    /* flex-direction: row; */
+@media only screen and (min-width: 900px) {
+  .contact-form {
+    margin-left: 86px;
+    margin-right: 86px;
   }
+}
 
+@media only screen and (min-width: 1024px) {
   #name,
   #mail {
     width: 375px;
-  }
-
-  .contact-input-wrapper {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .contact-info-wrapper {
-    display: flex;
-    align-self: center;
-    gap: 100px;
   }
 }
 
