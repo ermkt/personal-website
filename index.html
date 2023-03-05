@@ -146,28 +146,34 @@
         <p></p>
         <div class="container">
           <form action="">
-            <label for="name">Your Name</label>
-            <input
-              type="text"
-              id="name"
-              name="fullname"
-              placeholder="Your full name"
-            />
-
-            <label for="mail">Email address</label>
-            <input
-              type="text"
-              id="mail"
-              name="mailaddress"
-              placeholder="Enter your email address"
-            />
-
-            <label for="subject">Your message</label>
-            <textarea
-              id="subject"
-              name="subject"
-              placeholder="Hey, I like your work and was wondering ..."
-            ></textarea>
+            <div class="contact-info-wrapper">
+              <div class="contact-input-wrapper">
+                <label for="name">Your Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="fullname"
+                  placeholder="Your full name"
+                />
+              </div>
+              <div class="contact-input-wrapper">
+                <label for="mail">Email address</label>
+                <input
+                  type="text"
+                  id="mail"
+                  name="mailaddress"
+                  placeholder="Enter your email address"
+                />
+              </div>
+            </div>
+            <div>
+              <label for="subject">Your message</label>
+              <textarea
+                id="subject"
+                name="subject"
+                placeholder="Hey, I like your work and was wondering ..."
+              ></textarea>
+            </div>
 
             <input type="submit" value="Send Mail ✉️" />
           </form>
