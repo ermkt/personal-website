@@ -217,6 +217,12 @@ li a:hover {
   }
 }
 
+@media only screen and (min-width: 900px) {
+  .about-me {
+    margin-left: 86px;
+  }
+}
+
 @media only screen and (min-width: 1024px) {
   .about-me {
     margin-left: 86px;
@@ -310,6 +316,12 @@ li a:hover {
   }
 }
 
+@media only screen and (min-width: 900px) {
+  .skills {
+    padding-left: 86px;
+  }
+}
+
 @media only screen and (min-width: 1024px) {
   .skills {
     padding-left: 86px;
@@ -334,6 +346,13 @@ li a:hover {
   .works {
     width: 45%;
     margin-bottom: 100px;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .works {
+    margin-left: 86px;
+    width: 45%;
   }
 }
 
@@ -401,6 +420,14 @@ li a:hover {
   display: flex;
   flex-direction: column;
 }
+
+@media only screen and (min-width: 900px) {
+  .contact-form {
+    margin-left: 86px;
+    margin-right: 86px;
+  }
+}
+
 @media only screen and (min-width: 1024px) {
   .contact-form {
     margin-left: 86px;
@@ -419,7 +446,7 @@ form {
   width: 100%;
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 900px) {
   form {
     flex-wrap: wrap;
     /* flex-direction: row; */
@@ -438,7 +465,31 @@ form {
   .contact-info-wrapper {
     display: flex;
     align-self: center;
-    gap: 180px;
+    justify-content: space-between;
+    width: inherit;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  form {
+    flex-wrap: wrap;
+    /* flex-direction: row; */
+  }
+
+  #name,
+  #mail {
+    width: 375px;
+  }
+
+  .contact-input-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-info-wrapper {
+    display: flex;
+    align-self: center;
+    gap: 100px;
   }
 }
 
