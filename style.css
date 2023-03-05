@@ -29,6 +29,12 @@ h3 {
   margin-bottom: 0px;
 }
 
+@media only screen and (min-width: 1440px) {
+  h3 {
+    font-size: 64px;
+  }
+}
+
 h4 {
   font-family: "Istok Web", sans-serif;
   font-weight: 600;
@@ -57,17 +63,28 @@ p {
   font-size: 18px;
 }
 
+@media only screen and (min-width: 1440px) {
+  p {
+    font-size: 20px;
+  }
+}
+
 /* || Header and Main Navigation */
 
 header {
   display: flex;
   flex-wrap: nowrap;
   margin: 30px 26px;
+  justify-content: space-between;
 }
 
 @media only screen and (min-width: 1024px) {
   header {
-    margin: 37px 60px;
+    margin: 37px 0 0 60px;
+  }
+
+  nav {
+    margin-right: 135px;
   }
 }
 
@@ -75,7 +92,7 @@ nav {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  width: 100vw;
+  width: fit-content;
 }
 
 ul {
@@ -84,6 +101,16 @@ ul {
   flex-wrap: nowrap;
   text-decoration: none;
   list-style-type: none;
+  font-family: "Istok Web", sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+@media only screen and (min-width: 768px) {
+  ul {
+    gap: 90px;
+  }
 }
 
 /* || Utilities */
@@ -107,6 +134,13 @@ a {
   height: 39px;
 }
 
+@media only screen and (min-width: 1024px) {
+  #logo {
+    width: 52px;
+    height: 60px;
+  }
+}
+
 .ellie {
   margin-top: 70px;
   margin-bottom: -1px;
@@ -127,6 +161,12 @@ a {
   }
 }
 
+@media only screen and (min-width: 1440px) {
+  .ellie {
+    margin-left: 175px;
+  }
+}
+
 /* || About Me */
 
 .about-me {
@@ -144,6 +184,12 @@ a {
 @media only screen and (min-width: 1024px) {
   .about-me {
     margin-left: 86px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .about-me div {
+    width: 475px;
   }
 }
 
