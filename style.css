@@ -63,6 +63,12 @@ p {
   font-size: 18px;
 }
 
+@media only screen and (min-width: 768px) {
+  p {
+    font-size: 15px;
+  }
+}
+
 @media only screen and (min-width: 1440px) {
   p {
     font-size: 20px;
@@ -119,6 +125,19 @@ a {
   text-decoration: none;
 }
 
+a:link {
+  color: white;
+}
+
+a:visited {
+  color: white;
+}
+
+a:hover {
+  border: none;
+  border-bottom: 5px solid #91a6ff;
+}
+
 #headline-color-2 {
   color: #91a6ff;
 }
@@ -142,7 +161,7 @@ a {
 }
 
 .ellie {
-  margin-top: 70px;
+  margin-top: 30px;
   margin-bottom: -1px;
 }
 
@@ -156,14 +175,16 @@ a {
 
 @media only screen and (min-width: 1024px) {
   .ellie {
-    width: 535px;
-    height: 690px;
+    width: 410px;
+    height: 525px;
   }
 }
 
 @media only screen and (min-width: 1440px) {
   .ellie {
     margin-left: 175px;
+    width: 535px;
+    height: 690px;
   }
 }
 
@@ -177,13 +198,31 @@ a {
 @media only screen and (min-width: 768px) {
   .about-me {
     flex-direction: row;
-    margin-right: 0;
+    justify-content: space-between;
+  }
+
+  .about-me p {
+    margin-bottom: 30px;
+  }
+
+  #zwei {
+    flex-wrap: nowrap;
   }
 }
 
 @media only screen and (min-width: 1024px) {
   .about-me {
     margin-left: 86px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .about-me div {
+    width: 45%;
+  }
+
+  #icons {
+    margin-left: 30px;
   }
 }
 
@@ -207,6 +246,44 @@ a {
   font-size: 20px;
 }
 
+#zwei {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: fit-content;
+}
+
+@media only screen and (min-width: 768px) {
+  #zwei {
+    flex-wrap: nowrap;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  #resume {
+    width: 155px;
+    height: 45px;
+    font-size: 15px;
+  }
+}
+
+#icons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  visibility: hidden;
+}
+#icons img {
+  width: 35px;
+  height: max-content;
+}
+
+@media only screen and (min-width: 768px) {
+  #icons {
+    visibility: visible;
+  }
+}
+
 /* || Skills */
 
 .skills {
@@ -222,7 +299,7 @@ a {
   }
 
   #box {
-    width: 55%;
+    width: 45%;
   }
 }
 
@@ -248,7 +325,8 @@ a {
 
 @media only screen and (min-width: 768px) {
   .works {
-    width: 50%;
+    width: 45%;
+    margin-bottom: 100px;
   }
 }
 
